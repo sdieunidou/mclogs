@@ -53,49 +53,6 @@
                 </div>
             </div>
         </div>
-        <div class="row info" id="info">
-            <div class="row-inner">
-                <div class="info-item info-blue">
-                    <div class="info-icon">
-                        <i class="fa fa-clone"></i>
-                    </div>
-                    <div class="info-details">
-                        <div class="info-title">
-                            Paste
-                        </div>
-                        <div class="info-text">
-                            Easily paste your server log file here from any source. Critical information e.g. IP addresses are automatically hidden.
-                        </div>
-                    </div>
-                </div>
-                <div class="info-item info-green">
-                    <div class="info-icon">
-                        <i class="fa fa-share-alt"></i>
-                    </div>
-                    <div class="info-details">
-                        <div class="info-title">
-                            Share
-                        </div>
-                        <div class="info-text">
-                            Use your personal short URL to share your server log with others and find solutions together.
-                        </div>
-                    </div>
-                </div>
-                <div class="info-item info-red">
-                    <div class="info-icon">
-                        <i class="fa fa-search"></i>
-                    </div>
-                    <div class="info-details">
-                        <div class="info-title">
-                            Analyse
-                        </div>
-                        <div class="info-text">
-                            Find problems in your server log through intelligent syntax highlighting and analysis.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row dark footer">
             <div class="row-inner">
                 &copy; 2017-<?=date("Y"); ?> - This website used <a href="https://github.com/aternosorg/mclogs" target="_blank">mclogs</a>
