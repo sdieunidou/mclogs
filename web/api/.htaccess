@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^frontend/css/(.*)$ frontend/css/$1 [L,QSA]
+RewriteRule ^frontend/js/(.*)$ frontend/js/$1 [L,QSA]
+RewriteRule ^api/(.*)$ api/index.php [L,QSA]
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+
