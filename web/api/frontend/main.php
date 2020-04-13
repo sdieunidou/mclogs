@@ -4,11 +4,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="content-language" content="en" />
         <meta name="theme-color" content="#2d3943" />
+        <meta name="robots" content="noindex, nofollow">
 
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:400,700">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
 
-        <title>API Documentation - mclo.gs</title>
+        <title>API Documentation</title>
 
         <base href="//<?=str_replace("api.", "", $_SERVER['HTTP_HOST']); ?>/frontend/" />
 
@@ -19,7 +20,7 @@
 
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-        <meta name="description" content="Easily paste your Minecraft server logs to share and analyse them.">
+        <meta name="description" content="Easily paste your server logs to share and analyse them.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </head>
     <body>
