@@ -173,8 +173,7 @@ if (!$log->exists()) {
         <?php if($log->exists()): ?>
         <div class="row row-notice dark">
             <div class="row-inner">
-                This log will be saved for 7 days from their last view.<br />
-                <a href="mailto:abuse@aternos.org?subject=Report%20mclo.gs/<?=$id->get(); ?>">Report abuse</a>
+                This log will be saved for 7 days from their last view.
             </div>
         </div>
         <?php endif; ?>
