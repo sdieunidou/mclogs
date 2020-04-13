@@ -109,7 +109,7 @@
         </div>
         <div class="row footer">
             <div class="row-inner">
-                &copy; 2017-<?=date("Y"); ?> by mclo.gs - a service by <a href="https://aternos.org">Aternos</a> | <a href="https://aternos.org/impressum/">Imprint</a>
+                &copy; 2017-<?=date("Y"); ?> - This website used a fork of <a href="https://github.com/aternosorg/mclogs" target="_blank">mclogs</a>
             </div>
         </div>
     </body>

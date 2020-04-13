@@ -179,7 +179,7 @@ if (!$log->exists()) {
         <?php endif; ?>
         <div class="row dark footer">
             <div class="row-inner">
-                &copy; 2017-<?=date("Y"); ?> - This website used <a href="https://github.com/aternosorg/mclogs" target="_blank">mclogs</a>
+                &copy; 2017-<?=date("Y"); ?> - This website used a fork of <a href="https://github.com/aternosorg/mclogs" target="_blank">mclogs</a>
             </div>
         </div>
         <script src="js/logview.js?v=130220"></script>
