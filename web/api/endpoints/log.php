@@ -25,6 +25,6 @@ $id = $log->put($content);
 
 $out->success = true;
 $out->id = $id->get();
-$out->url = "https://mclo.gs/".$out->id;
+$out->url = "https://log.mtxserv.com/".$out->id;
 
 echo json_encode($out);

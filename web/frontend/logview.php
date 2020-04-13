@@ -2,7 +2,7 @@
 $id = new Id(substr($_SERVER['REQUEST_URI'], 1));
 $log = new Log($id);
 
-$title = "mclo.gs - Paste, share & analyse your server logs";
+$title = "Paste, share & analyse your server logs";
 $description = "Easily paste your server logs to share and analyse them.";
 if (!$log->exists()) {
     $title = "Log not found";
@@ -17,7 +17,7 @@ if (!$log->exists()) {
     } else {
         $software = "Unknown";
     }
-    $title = $software . " server log [#" . $id->get() . "] - mclo.gs";
+    $title = $software . " server log [#" . $id->get() . "]";
     $lineNumbers = $log->getLineNumbers();
     $lineString = $lineNumbers === 1 ? "line" : "lines";
 
