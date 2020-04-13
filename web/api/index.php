@@ -3,14 +3,14 @@
 require_once("../../core/core.php");
 
 switch ($_SERVER['REQUEST_URI']) {
-    case "/":
+    case "/api/":
         require_once("frontend/main.php");
         break;
-    case "/1/log":
-    case "/1/log/":
+    case "/api/1/log":
+    case "/api/1/log/":
         require_once("endpoints/log.php");
         break;
-    case "/1/errors/rate":
+    case "/api/1/errors/rate":
         require_once("endpoints/rate-error.php");
         break;
     default:
