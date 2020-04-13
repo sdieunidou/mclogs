@@ -2,10 +2,10 @@
 $id = new Id(substr($_SERVER['REQUEST_URI'], 1));
 $log = new Log($id);
 
-$title = "mclo.gs - Paste, share & analyse your Minecraft server logs";
-$description = "Easily paste your Minecraft server logs to share and analyse them.";
+$title = "mclo.gs - Paste, share & analyse your server logs";
+$description = "Easily paste your server logs to share and analyse them.";
 if (!$log->exists()) {
-    $title = "Log not found - mclo.gs";
+    $title = "Log not found";
     http_response_code(404);
 } else {
     $analysis = $log->getAnalysis();
@@ -43,6 +43,7 @@ if (!$log->exists()) {
         <meta charset="utf-8" />
         <meta http-equiv="content-language" content="en" />
         <meta name="theme-color" content="#2d3943" />
+        <meta name="robots" content="noindex, nofollow">
 
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:400,700">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
@@ -61,38 +62,8 @@ if (!$log->exists()) {
 
         <meta name="description" content="<?=$description; ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43611107-4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)};
-            gtag('js', new Date());
-
-            gtag('config', 'UA-43611107-4', { 'anonymize_ip': true });
-        </script>
     </head>
     <body class="log-body">
-        <header class="row navigation">
-            <div class="row-inner">
-                <a href="/" class="logo">
-                    <img src="img/logo.png" />
-                </a>
-                <div class="menu">
-                    <a class="menu-item" href="/#info">
-                        <i class="fa fa-info-circle"></i> Info
-                    </a>
-                    <a class="menu-item" href="/#plugin">
-                        <i class="fa fa-database"></i> Plugin
-                    </a>
-                    <a class="menu-item" href="/#api">
-                        <i class="fa fa-code"></i> API
-                    </a>
-                    <a class="menu-social btn btn-black btn-notext btn-large btn-no-margin" href="https://github.com/aternosorg/mclogs" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </header>
         <div class="row dark log-row">
             <div class="row-inner">
                 <?php if($log->exists()): ?>
@@ -207,9 +178,9 @@ if (!$log->exists()) {
             </div>
         </div>
         <?php endif; ?>
-        <div class="row footer">
+        <div class="row dark footer">
             <div class="row-inner">
-                &copy; 2017-<?=date("Y"); ?> by mclo.gs - a service by <a href="https://aternos.org">Aternos</a> | <a href="https://aternos.org/impressum/">Imprint</a>
+                &copy; 2017-<?=date("Y"); ?> - This website used <a href="https://github.com/aternosorg/mclogs" target="_blank">mclogs</a>
             </div>
         </div>
         <script src="js/logview.js?v=130220"></script>
